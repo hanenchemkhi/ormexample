@@ -20,6 +20,7 @@ import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
 @Data
+@RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
@@ -38,11 +39,11 @@ public class Employee {
 	Date dob;
 	@NonNull
 	String password;
-	public Employee(@NonNull String name, @NonNull Date dob, @NonNull String password) {
-		super();
-		this.name = name;
-		this.dob = dob;
-		this.password = password;
-	}
+//	public Employee(@NonNull String name, @NonNull Date dob, @NonNull String password) {
+//		super();
+//		this.name = name;
+//		this.dob = dob;
+//		this.password = password;
+//	}
 	
 }
