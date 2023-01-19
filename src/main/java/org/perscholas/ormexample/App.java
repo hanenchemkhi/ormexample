@@ -49,7 +49,7 @@ public class App {
     		
     		tx = session.beginTransaction();
     		// transient mode
-    		Employee e = new Employee("jafer", new Date(),"password");
+    		Employee e = new Employee( "jafer", new Date(),"password");
     		Employee e2 = new Employee("jafer", new Date(),"password");
 
     		// persist mode
@@ -62,9 +62,6 @@ public class App {
     		List<Employee> list = session.createQuery("from Employee", Employee.class).getResultList();
     		System.out.println(list);
     		// detached mode 
-    		
-    		
-       		
     		
     		
     		
